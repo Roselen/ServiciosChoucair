@@ -5,6 +5,7 @@ import static org.junit.Assert.fail;
 
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -22,6 +23,7 @@ public class ServicioClienteTest {
 		driver.get("https://www.choucairtesting.com/servicio/");
 	}
 	
+	@Test
 	public void testServicioCliente() {		
 		WebElement lnkServicioCliente = driver.findElement(By.xpath("//a[contains(text(),'serviciocliente@choucairtesting.com')]"));
 		lnkServicioCliente.click();
